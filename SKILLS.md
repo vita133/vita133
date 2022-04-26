@@ -11,12 +11,12 @@
 | 🟩 variable          | 🟩 assignment         | 🟩 return             | 🟩 object           | 🟩 antipatterns      |
 | 🟩 constant          | 🟩 prototype          | 🟩 signature          | 🟩 collection       | 🟩 paradigm          |
 | 🟩 scalar            | 🟩 class              | 🟩 argument           | 🟩 hash table       | 🟩 algorithm         |
-| 🟩 literal           | 🟩 while              | 🟩 parameter          | 🟦 linked list      | 🟩 magic numbers     |
+| 🟩 literal           | 🟩 while              | 🟩 parameter          | 🟩 linked list      | 🟩 magic numbers     |
 | 🟩 expression        | 🟩 do..while          | 🟩 pure function      | 🟩 queue            | 🟩 hardcode          |
 | 🟩 heap              | 🟩 for                | 🟦                    | 🟩 stack            | 🟩 complexity        |
 | 🟩 type              | 🟩 for..in            | 🟩 side effects       | 🟩 deque            | 🟩 decomposition     |
 | 🟩 primitive types   | 🟩 for..of            | 🟩 closure            | 🟩 serialization    | 🟩 spaghetti         |
-| 🟩 reference         | 🟨 for await          | 🟩 partial            | 🟦 mixin, extend    | 🟩 silver bullet     |
+| 🟩 reference         | 🟨 for await          | 🟩 partial            | 🟩 mixin, extend    | 🟩 silver bullet     |
 | 🟩 flag              | 🟩 throw              | 🟩 curry              | 🟨 iterator         | 🟩 not invented here |
 | 🟩 lexical scope     | 🟩 try..catch         | 🟩 chaining           | 🟩 typed arrays     | 🟦 dead code         |
 | 🟩 code block        | 🟩 equality operators | 🟩 higher order       | 🟩 Map              | 🟦 unreachable code  |
@@ -37,18 +37,18 @@
 | Theory                         | OOP basics            | Abstractions         | Patterns                 |
 |--------------------------------|-----------------------|----------------------|--------------------------|
 | 🟦 Procedural programming      | 🟦 constructor        | ⬜ struct, record    | 🟦 Singleton             |
-| 🟦 Imperative programming      | 🟦 new                | ⬜ Mutable state     |                          |
+| 🟩 Imperative programming      | 🟦 new                | ⬜ Mutable state     |                          |
 | 🟦 Structured programming      | 🟦 Static method      | ⬜ Immutable state   |                          |
 | 🟦 Non-structured programming  | 🟦 Method             | ⬜ Enum              |                          |
-| 🟦 Functional programming      | 🟦 Async method       | 🟦 Linked list       |                          |
-| 🟦 Prototype-based programming | 🟦 Getters, Setters   | 🟦 Doubly list       |                          |
+| 🟩 Functional programming      | 🟦 Async method       | 🟩 Linked list       |                          |
+| 🟦 Prototype-based programming | 🟩 Getters, Setters   | 🟦 Doubly list       |                          |
 | 🟦 Object-oriented programming | 🟦 Public fields      | 🟦 Unrolled list     |                          |
 | ⬜ Object-based programming    | 🟦 Private fields     | 🟦 Circular list     |                          |
 | 🟦 Generic programming         | 🟦 Field declarations | 🟦 Trees             |                          |
 | 🟦 Concurrent computing        | 🟦 Inheritance        | 🟩 Graphs            |                          |
 | 🟦 Asyncronous programming     | 🟦 Parent class       | 🟦 Functor           |                          |
 | 🟦 Parallel programming        | 🟦 Polymorphism       | 🟦 Functional object |                          |
-| 🟦 Reactive programming        | 🟦 Abstract class     | ⬜ Monad             |                          |
+| 🟩 Reactive programming        | 🟦 Abstract class     | ⬜ Monad             |                          |
 | ⬜ FRP (Functional-reactive)   | 🟦 Interface          | 🟦 Generator         |                          |
 | 🟦 Automata-based programming  | 🟦 Encapsulation      | 🟦 Iterator          |                          |
 | 🟦 Domain-specific languages   | ⬜ Hidden class       | 🟦 Async Iterator    |                          |
@@ -61,9 +61,9 @@
 
 | Async contracts        | JavaScript & Node.js specific  | Theory              | Techniques               |
 |------------------------|--------------------------------|---------------------|--------------------------|
-| 🟦 Callback-last       | 🟦 Timers                      | 🟦 Event Loop       | ⬜ async.js library      |
+| 🟦 Callback-last       | 🟩 Timers                      | 🟦 Event Loop       | ⬜ async.js library      |
 | 🟦 Error-first         | 🟦 setImmediate                | 🟦 Async error      | ⬜ Async composition     |
-| 🟦 Promise             | 🟦 nextTick                    | 🟦 try..catch       | ⬜ Rx.js                 |
+| 🟦 Promise             | 🟦 nextTick                    | 🟩 try..catch       | ⬜ Rx.js                 |
 | 🟦 Async function      | ⬜ AbortController             | 🟦 Non-blocking     | 🟦 Sequential async      |
 | 🟦 await               | 🟦 Promise unhandled rejection | 🟦 Async I/O        | 🟦 Parallel async        |
 | 🟦 Generator           | 🟦 Promise double resolve      | 🟦 Pattern Reactor  | 🟦 Promise.all           |
@@ -92,10 +92,10 @@
 | 🟦 Network API       | 🟦 Separation of concerns    | 🟦 Websocket      | 🟦 Writable      | 🟦 Graceful Shutdown |
 | ⬜ Addons            | 🟦 Inversion of control      | ⬜ SSE            | 🟦 Transform     | 🟦 Dependencies      |
 | ⬜ N-API             | 🟦 Dependency injection      | ⬜ HTTP/3 (QUIC)  | ⬜ back pressure |                      |
-| ⬜ Webassembly       | 🟦 GRASP for JS and Node.js  | ⬜ Long polling   | 🟦 Buffer        |                      |
-| 🟦 npm               | 🟦 SOLID for JS and Node.js  | 🟦 REST           | 🟦 Console       |                      |
-| 🟦 node_modules      | 🟦 GoF for JS and Node.js    | 🟦 RPC            | 🟦 Inspector     |                      |
-| 🟦 package.json      | ⬜ Distributed systems       | 🟦 Routing        | 🟦 Reliability   |                      |
+| ⬜ Webassembly       | 🟦 GRASP for JS and Node.js  | ⬜ Long polling   | 🟩 Buffer        |                      |
+| 🟩 npm               | 🟦 SOLID for JS and Node.js  | 🟦 REST           | 🟦 Console       |                      |
+| 🟩 node_modules      | 🟦 GoF for JS and Node.js    | 🟦 RPC            | 🟦 Inspector     |                      |
+| 🟩 package.json      | ⬜ Distributed systems       | 🟦 Routing        | 🟦 Reliability   |                      |
 | 🟦 vm isolation      | ⬜ Highload applications     | 🟦 IP sticky      | 🟦 Quality       |                      |
 | 🟦 command line args | 🟦 DDD                       | 🟦 DoS            | 🟦 Availability  |                      |
 | ⬜ Node.js CLI       | 🟦 Clean architecture        | 🟦 DDoS           | 🟦 Flexibility   |                      |
