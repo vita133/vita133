@@ -42,7 +42,7 @@
 | 🟦 Non-structured programming  | 🟩 Method             | ⬜ Enum              |                          |
 | 🟩 Functional programming      | 🟩 Async method       | 🟩 Linked list       |                          |
 | 🟦 Prototype-based programming | 🟩 Getters, Setters   | 🟩 Doubly list       |                          |
-| 🟦 Object-oriented programming | 🟩 Public fields      | 🟩 Unrolled list     |                          |
+| 🟩 Object-oriented programming | 🟩 Public fields      | 🟩 Unrolled list     |                          |
 | ⬜ Object-based programming    | 🟩 Private fields     | 🟩 Circular list     |                          |
 | 🟦 Generic programming         | 🟩 Field declarations | 🟩 Trees             |                          |
 | 🟦 Concurrent computing        | 🟩 Inheritance        | 🟩 Graphs            |                          |
@@ -52,7 +52,7 @@
 | ⬜ FRP (Functional-reactive)   | 🟩 Interface          | 🟩 Generator         |                          |
 | 🟦 Automata-based programming  | 🟩 Encapsulation      | 🟩 Iterator          |                          |
 | 🟦 Domain-specific languages   | ⬜ Hidden class       | 🟦 Async Iterator    |                          |
-| 🟦 Multi-paradigm programming  | ⬜ Object form        |                      |                          |
+| 🟩 Multi-paradigm programming  | ⬜ Object form        |                      |                          |
 | ⬜ Metaprogramming             | 🟩 instance           |                      |                          |
 | ⬜ Actor model                 | ⬜ Introspection      |                      |                          |
 |                                | 🟩 Reflection         |                      |                          |
