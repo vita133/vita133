@@ -10,5 +10,5 @@
 <code>📫 [vitandrukhiv@gmail.com](mailto:vitandrukhiv@gmail.com)</code>
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vita133&layout=compact)](https://https://github.com/vita133/vita133)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vita133&layout=compact)](https://github.com/vita133/vita133)
 
