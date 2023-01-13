@@ -85,15 +85,15 @@
 
 | Internals            | Theory                       | Network           | Technique        | Problems             |
 |----------------------|------------------------------|-------------------|------------------|----------------------|
-| 🟦 Nonblocking I/O   | 🟦 I/O bound tasks           | 🟦 HTTP(S)        | 🟦 Logging       | 🟦 Memory leaks      |
-| 🟦 Event Loop        | 🟦 CPU bound tasks           | 🟦 TCP/SSL        | 🟦 Testing       | 🟦 Resource leaks    |
-| 🟦 commonjs          | 🟦 Memory bound tasks        | 🟦 UDP            | ⬜ CI/CD         | 🟦 Blocking code     |
-| 🟦 ECMA modules      | 🟦 Multilayer approach       | 🟦 TLS            | 🟦 Readable      | 🟦 Data race         |
+| 🟦 Nonblocking I/O   | 🟦 I/O bound tasks           | 🟩 HTTP(S)        | 🟦 Logging       | 🟦 Memory leaks      |
+| 🟦 Event Loop        | 🟦 CPU bound tasks           | 🟩 TCP/SSL        | 🟦 Testing       | 🟦 Resource leaks    |
+| 🟦 commonjs          | 🟦 Memory bound tasks        | 🟩 UDP            | ⬜ CI/CD         | 🟦 Blocking code     |
+| 🟦 ECMA modules      | 🟦 Multilayer approach       | 🟩 TLS            | 🟦 Readable      | 🟦 Data race         |
 | 🟦 Network API       | 🟦 Separation of concerns    | 🟦 Websocket      | 🟦 Writable      | 🟦 Graceful Shutdown |
 | ⬜ Addons            | 🟦 Inversion of control      | ⬜ SSE            | 🟦 Transform     | 🟦 Dependencies      |
 | ⬜ N-API             | 🟦 Dependency injection      | ⬜ HTTP/3 (QUIC)  | ⬜ back pressure |                      |
 | ⬜ Webassembly       | 🟦 GRASP for JS and Node.js  | ⬜ Long polling   | 🟩 Buffer        |                      |
-| 🟩 npm               | 🟦 SOLID for JS and Node.js  | 🟦 REST           | 🟦 Console       |                      |
+| 🟩 npm               | 🟦 SOLID for JS and Node.js  | 🟩 REST           | 🟩 Console       |                      |
 | 🟩 node_modules      | 🟦 GoF for JS and Node.js    | 🟦 RPC            | 🟦 Inspector     |                      |
 | 🟩 package.json      | ⬜ Distributed systems       | 🟦 Routing        | 🟦 Reliability   |                      |
 | 🟦 vm isolation      | ⬜ Highload applications     | 🟦 IP sticky      | 🟦 Quality       |                      |
@@ -102,10 +102,39 @@
 | 🟦 Streams           | 🟦 Domain in the middle      | 🟦 XSS            |                  |                      |
 | 🟦 Clustering        | 🟦 Message Queue             | 🟦 Path traversal |                  |                      |
 | ⬜ Load balancing    | 🟦 Transport-agnostic server | 🟦 CSRF           |                  |                      |
-| ⬜ Serverless clouds | 🟦 Framework-agnostic app    | 🟦 DNS            |                  |                      |
-| ⬜ FaaS clouds       | ⬜ Interactive applications  | 🟦 Fetch          |                  |                      |
+| ⬜ Serverless clouds | 🟦 Framework-agnostic app    | 🟩 DNS            |                  |                      |
+| ⬜ FaaS clouds       | ⬜ Interactive applications  | 🟩 Fetch          |                  |                      |
 | 🟦 Debugging node.js | ⬜ Real-time applications    | 🟦 zlib           |                  |                      |
 | 🟦 crypto            | 🟦 CQS and CQRS              |                   |                  |                      |
 | ⬜ SharedArrayBuffer | 🟦 Event Sourcing            |                   |                  |                      |
 | 🟦 child_process     | 🟦 Shared memory             |                   |                  |                      |
 | 🟦 worker_threads    |                              |                   |                  |                      |
+
+## SQL
+
+| Main concepts                     | Syntax            | Agrigate functions          |
+| --------------------------------- | ----------------- | --------------------------- |
+| 🟩 DML                             | 🟩 CREATE DATABASE | ⬜️ APPROX_COUNT_DISTINCT |
+| 🟩 selection                       | 🟩 SHOW DATABASES  | 🟩 AVG                   |
+| 🟩 projection                      | 🟩 DROP DATABASES  | ⬜️ CHECKSUM_AGG          |
+| 🟩 nested subqueries               | 🟩 USE             | 🟩 COUNT                 |
+| 🟩 join                            | 🟩 SOURCE          | 🟩 COUNT_BIG             |
+| 🟩 left join                       | 🟩 CREATE TABLES   | 🟩 GROUPING              |
+| 🟩 right join                      | 🟩 SHOW TABLE      | 🟩 GROUPING_ID           |
+| ⬜️ alias                           | 🟩 DROP TABLE      | 🟩 MAX                   |
+| 🟩 direct multiplication of tables | 🟩 DESCRIBE        | 🟩 MIN                   |
+| 🟩 relational division             | 🟩 INSERT          | 🟦 STDEV                 |
+| 🟩 agregate functions              | 🟩 UPDATE          | 🟦 STDEVP                |
+| 🟩 full projection                 | 🟩 DELETE          | 🟦 STRING_AGG            |
+|                                    | 🟩 SELECT          | 🟩 SUM                   |
+|                                    | 🟩 SELECT DISTINCT | ⬜️ VAR                   |
+|                                    | 🟩 WHERE           | ⬜️ VARP                  |
+|                                    | 🟩 GROUP BY        |                           |
+|                                    | 🟩 ORDER BY        |                           |
+|                                    | 🟩 HAVING          |                           |
+|                                    | 🟩 BETWEEN         |                           |
+|                                    | 🟩 IN              |                           |
+|                                    | 🟩 LIKE            |                           |
+|                                    | 🟩 JOIN            |                           |
+|                                    | 🟩 VIEW            |                           |
+|                                    | 🟩 LIMIT           |                           |
