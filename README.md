@@ -8,3 +8,7 @@
 <code>🧑‍💻 Languages: Kotlin, JavaScript, C++, C </code>
 <code>💬 telegram: [@vita_andrukhiv](https://telegram.me/vita_andrukhiv)</code>
 <code>📫 [vitandrukhiv@gmail.com](mailto:vitandrukhiv@gmail.com)</code>
+
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vita133&layout=compact)](https://github.com/vita133/vita133.git)
+
